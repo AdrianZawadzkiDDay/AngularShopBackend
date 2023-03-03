@@ -1,7 +1,6 @@
 package pl.nullpointerexception.shop.product.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -13,7 +12,6 @@ import java.math.BigDecimal;
 
 @Entity
 @Getter
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Product {
@@ -23,5 +21,9 @@ public class Product {
     private String name;
     private String category;
     private String description;
+    private String fullDescription;
     private BigDecimal price;
+    private String currency;
+    private String image;
+    private String slug;
 }
