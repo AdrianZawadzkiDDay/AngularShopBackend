@@ -1,22 +1,18 @@
-package pl.nullpointerexception.shop.product.service.dto;
+package pl.nullpointerexception.shop.common.dto;
 
 import lombok.Builder;
 import lombok.Getter;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 @Getter
 @Builder
-public class ProductDto {
+public class ProductListDto {
     private Long id;
     private String name;
-    private Long categoryId;
     private String description;
-    private String fullDescription;
     private BigDecimal price;
     private String currency;
     private String image;
     private String slug;
-    private List<ReviewDto> reviews;
 }
